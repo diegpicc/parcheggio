@@ -1,0 +1,16 @@
+C:\Users\Antonella\AppData\Local\Temporary Projects\Wpf_Parcheggio\bin\Debug\Wpf_Parcheggio.exe.config
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\bin\Debug\Wpf_Parcheggio.exe.config
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\Wpf_Parcheggio.csprojResolveAssemblyReference.cache
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\MainWindow.baml
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\MainWindow.g.cs
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\App.g.cs
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\Wpf_Parcheggio_MarkupCompile.cache
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\Wpf_Parcheggio.g.resources
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\Wpf_Parcheggio.Properties.Resources.resources
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\Wpf_Parcheggio.csproj.GenerateResource.Cache
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\bin\Debug\Wpf_Parcheggio.exe
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\bin\Debug\Wpf_Parcheggio.pdb
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\Wpf_Parcheggio.exe
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\Wpf_Parcheggio.pdb
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Antonella\Documents\Visual Studio 2012\Projects\Wpf_Parcheggio\Wpf_Parcheggio\obj\Debug\Wpf_Parcheggio_MarkupCompile.lref

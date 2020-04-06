@@ -1,0 +1,41 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Wpf_Parcheggio" x:Class="Wpf_Parcheggio.MainWindow"
+        Title="Parcheggio" Height="788" Width="1205.65" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        <DataGrid x:Name="tabVeicoliParcheggiati" ColumnWidth="*" Margin="13,458,29,36" CanUserAddRows="False" SelectionMode="Single" CanUserResizeRows="False" CanUserResizeColumns="False" CellEditEnding="tabVeicoliParcheggiati_CellEditEnding">
+            <DataGrid.RowValidationRules>
+                <local:VeicoliParcheggiatiValidationRule ValidatesOnTargetUpdated="True" ValidationStep="UpdatedValue"/>
+            </DataGrid.RowValidationRules>
+        </DataGrid>
+        <DataGrid x:Name="tabVeicoli" ColumnWidth="*" HorizontalAlignment="Left" Margin="13,117,0,0" VerticalAlignment="Top" Height="258" Width="616" KeyUp="tabVeicoli_KeyUp" CanUserAddRows="False" CanUserDeleteRows="False" HorizontalContentAlignment="Stretch" SelectionChanged="tabVeicoli_SelectionChanged" SelectionMode="Single" CanUserResizeRows="False" CanUserResizeColumns="False"/>
+        <DataGrid x:Name="tabPosti" ColumnWidth="*" Margin="0,117,29,0" VerticalAlignment="Top" Height="258" HorizontalContentAlignment="Stretch" CanUserAddRows="False" SelectionChanged="tabPosti_SelectionChanged" HorizontalAlignment="Right" Width="520" SelectionMode="Single" CanUserResizeRows="False" CanUserResizeColumns="False"/>
+        <TextBox x:Name="txtTarga" HorizontalAlignment="Left" Height="26" Margin="58,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="FormVeicoli_Changed" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtProprietario" HorizontalAlignment="Left" Height="26" Margin="261,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center" TextChanged="FormVeicoli_Changed"/>
+        <Label Content="Targa" HorizontalAlignment="Left" Margin="13,18,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <Label Content="Proprietario" HorizontalAlignment="Left" Margin="183,18,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnAggiungiVeicolo" Content="Aggiungi" HorizontalAlignment="Left" Margin="549,18,0,0" VerticalAlignment="Top" Width="80" Click="btnAggiungiVeicolo_Click" Height="26" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cbxTipoVeicolo" HorizontalAlignment="Left" Margin="424,18,0,0" VerticalAlignment="Top" Width="120" Height="26" VerticalContentAlignment="Center" DropDownClosed="FormVeicoli_Changed"/>
+        <Label Content="Tipo" HorizontalAlignment="Left" Margin="386,18,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <Label Content="Mostra" HorizontalAlignment="Left" Margin="13,59,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <CheckBox x:Name="ckbParcheggiati" Content="Parcheggiati" HorizontalAlignment="Left" Margin="65,59,0,0" VerticalAlignment="Top" Height="26" Width="139" VerticalContentAlignment="Center" Checked="FormVeicoli_Changed" Unchecked="FormVeicoli_Changed"/>
+        <CheckBox x:Name="ckbNonParcheggiati" Content="Non Parcheggiati" HorizontalAlignment="Left" Margin="209,59,0,0" VerticalAlignment="Top" Height="26" Width="160" VerticalContentAlignment="Center" Unchecked="FormVeicoli_Changed" Checked="FormVeicoli_Changed"/>
+        <Label Content="Tipo" Margin="0,18,303,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="33"/>
+        <ComboBox x:Name="cbxTipoPosto" Margin="0,18,178,0" VerticalAlignment="Top" Height="26" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="120" SelectionChanged="cbxTipoPosto_SelectionChanged"/>
+        <Button x:Name="btnAggiungiPosto" Content="Aggiungi" Margin="0,18,93,0" VerticalAlignment="Top" Height="26" VerticalContentAlignment="Center" Click="btnAggiungiPosto_Click" HorizontalAlignment="Right" Width="80"/>
+        <TextBox x:Name="txtNumeroPosti" Height="26" Margin="0,18,341,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="120"/>
+        <Label Content="Numero Posti" Margin="0,18,466,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="83"/>
+        <Label Content="Targa" HorizontalAlignment="Left" Margin="13,407,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="txtTarga2" HorizontalAlignment="Left" Height="26" Margin="58,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        <Label Content="ID Posto" HorizontalAlignment="Left" Margin="183,407,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="26" Margin="243,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        <Label Content="Ora Entrata" HorizontalAlignment="Left" Margin="368,407,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtOraEntrata" HorizontalAlignment="Left" Height="26" Margin="443,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnRegistra" Content="Registra" HorizontalAlignment="Left" Margin="568,407,0,0" VerticalAlignment="Top" Width="80" Click="btnRegistra_Click" Height="26" VerticalContentAlignment="Center"/>
+        <Label Content="Mostra" Margin="0,59,487,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="47"/>
+        <CheckBox x:Name="ckbMostraOccupati" Content="Occupati" Margin="0,59,343,0" VerticalAlignment="Top" Height="26" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="139" Unchecked="CheckboxPosti_Changed" Checked="CheckboxPosti_Changed"/>
+        <CheckBox x:Name="ckbMostraLiberi" Content="Liberi" Margin="0,59,178,0" VerticalAlignment="Top" Height="26" VerticalContentAlignment="Center" HorizontalAlignment="Right" Width="160" Checked="CheckboxPosti_Changed" Unchecked="CheckboxPosti_Changed"/>
+
+    </Grid>
+</Window>
